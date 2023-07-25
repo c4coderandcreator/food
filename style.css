@@ -1,0 +1,124 @@
+/* -------------- Menu list (Naima) --------------  */
+
+body{
+    font-family: 'Pangolin', cursive;
+    height: 100vh;
+    overflow: scroll;
+    background-color:rgb(222, 241, 229);
+}
+
+/* Menu-heading */
+.menu-heading{
+    padding: 1px 0;
+}
+.menu-title{
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 10px 0 10px 0;
+}
+.menu-line{
+    height: 3px;
+    width: 150px;
+    background-color: black;
+    margin: -13px auto;
+}
+
+/* Menu-buttons */
+.button-container{
+    overflow-x:auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* .prev{
+    height:55px;
+    margin-left:0;
+}
+.next{
+    height: 55px;
+    margin-right:0;
+}
+.prev:hover, .next:hover{
+    cursor: pointer;
+} */
+.btn{
+    background-color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 9px 30px;
+    margin: 10px 25px;
+    border-radius: 20px;
+    border: 1px solid green;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:rgb(131, 185, 131);
+    color: white; 
+    border: 1px solid rgb(131, 185, 131);
+    transform: translate3d(1px, -2px, -2px);
+}
+.clicked-btn{
+    background-color: green;
+    color: white;
+}
+
+
+/* Menu-container */
+.slide2, .slide3, .slide4, .slide5, .slide6, .slide7{
+    display: none;
+}
+.container{
+    background: transparent;
+    margin-top: 10px;
+    display: flex;
+    height:20%;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; */
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* grid-auto-flow: column; */
+}
+.dish{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    margin: 0 30px;
+}
+.dish:hover{
+    background-color: rgb(131, 185, 131);
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate3d(-3px, -3px, -3px);
+}
+.dish:hover > p{
+    color: white;
+}
+.dish-img{
+    height:170px;
+    border-radius: 50%;
+}
+.dish-price{
+    font-weight: bold;
+    font-size:0.8rem;
+    text-align: center;
+    margin: -2px 0;
+}
+.dish-name{
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 9px 0;
+}
+
+
+/* ------------- Media Queries for Menu list (Naima) -------------- */
+
+@media screen and (max-width:950px){
+
+}
