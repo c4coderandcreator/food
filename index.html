@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+
+    <!-- Link for HamBurger -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- Link for style.css -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,8 +26,13 @@
         <div class="menu-line"></div>
     </div>
     
-    <!-- Menu-buttons -->
-    <div class="button-container">
+    <!-- Menu-buttons with hamBurger -->
+    <nav> 
+            <label for="toggler">
+                <i class="fa fa-bars"></i>
+            </label>
+    <input type="checkbox" id="toggler" name="">
+    <div class="button-container menu">
         <!-- <img class="prev" src="./images/prev.png" alt=""> -->
         <button class="btn starter clicked-btn">STARTER</button>
         <button class="btn salad">SALAD</button>
@@ -34,7 +43,7 @@
         <button class="btn dinner">DINNER</button>
         <!-- <img class="next" src="./images/next.png" alt=""> -->
     </div>
-
+    </nav>
 
     <!-- Menu-container -->
 

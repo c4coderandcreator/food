@@ -115,7 +115,28 @@ body{
     text-align: center;
     margin: 9px 0;
 }
+/* Hamburger css code*/
+#toggler, label{
+    display: none;
+    }
+    label i{
+    color: rgb(12, 123, 0);
+    }
 
+@media screen and (max-width: 650px){
+    .menu{
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    }
+    label{
+    display: inline-flex;
+    }
+    #toggler:checked~.menu{
+    max-height: 100%;
+    }
+}
+/* Hamburger css code ends here*/
 
 /* ------------- Media Queries for Menu list (Naima) -------------- */
 
